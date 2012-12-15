@@ -2,6 +2,9 @@
 public class RomanNumerals {
 
 	public String toRoman(int number) {
+		if(number == 0){
+			return "";
+		}
 		if (number == 1)
 			return "I";
 		if(number == 2){
@@ -13,7 +16,10 @@ public class RomanNumerals {
 		if(number == 4){
 			return "IV";
 		}
-		return "V";
+		if(number < 10){
+			return "V"+toRoman(number-5);
+		}
+		return "X";
 	}
 
 }

@@ -31,6 +31,10 @@ public class RomanNumeralUnitTests {
 		assertEquals("CD", number.toRoman(400));
 		assertEquals("CDLXXII", number.toRoman(472));
 		assertEquals("DCCXCI", number.toRoman(791));
+		assertEquals("CM", number.toRoman(900));
+		assertEquals("M", number.toRoman(1000));
+		assertEquals("MM", number.toRoman(2000));
+		assertEquals("MMM", number.toRoman(3000));
 		
 	}
 	

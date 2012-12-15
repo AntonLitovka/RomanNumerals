@@ -7,7 +7,13 @@ public class RomanNumerals {
 		if(number == 2){
 			return "II";
 		}
-		return "III";
+		if(number == 3){
+			return "III";
+		}
+		if(number == 4){
+			return "IV";
+		}
+		return "V";
 	}
 
 }

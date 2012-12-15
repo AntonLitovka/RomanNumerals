@@ -22,7 +22,7 @@ public class RomanNumerals {
 		if( number == 9 ){
 			return "IX";
 		}
-		return "X";
+		return "X"+toRoman(number-10);
 	}
 
 }

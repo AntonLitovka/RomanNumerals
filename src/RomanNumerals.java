@@ -37,7 +37,13 @@ public class RomanNumerals {
 		if(number < 400){
 			return "C"+toRoman(number-100);
 		}
-		return "C";
+		if(number< 500){
+			return "CD"+toRoman(number-400);
+		}
+		if(number <900){
+			return "D"+toRoman(number-500);
+		}
+		return "D";
 	}
 
 }

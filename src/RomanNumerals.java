@@ -19,6 +19,9 @@ public class RomanNumerals {
 		if(number < 9){
 			return "V"+toRoman(number-5);
 		}
+		if( number == 9 ){
+			return "IX";
+		}
 		return "X";
 	}
 

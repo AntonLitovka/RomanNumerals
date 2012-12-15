@@ -43,7 +43,13 @@ public class RomanNumerals {
 		if(number <900){
 			return "D"+toRoman(number-500);
 		}
-		return "D";
+		if(number < 1000){
+			return "CM" + toRoman(number-900);
+		}
+		if(number < 4000){
+			return "M" + toRoman(number-1000);
+		}
+		return "M";
 	}
 
 }

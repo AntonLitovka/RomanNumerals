@@ -16,7 +16,7 @@ public class RomanNumerals {
 		if(number == 4){
 			return "IV";
 		}
-		if(number < 10){
+		if(number < 9){
 			return "V"+toRoman(number-5);
 		}
 		return "X";

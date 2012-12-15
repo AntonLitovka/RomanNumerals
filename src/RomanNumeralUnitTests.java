@@ -23,6 +23,10 @@ public class RomanNumeralUnitTests {
 		assertEquals("XL", number.toRoman(40));
 		assertEquals("XLII", number.toRoman(42));
 		assertEquals("C", number.toRoman(100));
+		assertEquals("XC", number.toRoman(90));
+		assertEquals("CVIII", number.toRoman(108));
+		assertEquals("CCI", number.toRoman(201));
+		assertEquals("CCCXLI", number.toRoman(341));
 		
 	}
 	

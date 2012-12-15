@@ -25,7 +25,7 @@ public class RomanNumerals {
 		if( number < 39 ){
 			return "X"+toRoman(number-10);
 		}
-		if( number < 41 ){
+		if( number < 49 ){
 			return "XL" + toRoman(number-40);
 		}
 		if ( number < 89 ){

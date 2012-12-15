@@ -20,6 +20,8 @@ public class RomanNumeralUnitTests {
 		assertEquals("XX", number.toRoman(20));
 		assertEquals("XXIV", number.toRoman(24));
 		assertEquals("L", number.toRoman(50));
+		assertEquals("XL", number.toRoman(40));
+		assertEquals("XLII", number.toRoman(42));
 		
 	}
 	

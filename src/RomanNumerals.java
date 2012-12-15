@@ -22,16 +22,22 @@ public class RomanNumerals {
 		if( number == 9 ){
 			return "IX";
 		}
-		if( number < 39 ){
+		if( number < 40 ){
 			return "X"+toRoman(number-10);
 		}
-		if( number < 49 ){
+		if( number < 50 ){
 			return "XL" + toRoman(number-40);
 		}
-		if ( number < 89 ){
+		if ( number < 90 ){
 			return "L" + toRoman(number-50);
 		}
-		return "L";
+		if(number < 99 ){
+			return "XC"+ toRoman(number-90);
+		}
+		if(number < 400){
+			return "C"+toRoman(number-100);
+		}
+		return "C";
 	}
 
 }
